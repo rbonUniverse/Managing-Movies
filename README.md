@@ -1,4 +1,4 @@
-<h1># Managing Movies Project
+<h1># Managing Movies
  </h1>
 <h2># Installation</h2>
 1. Fork the project
