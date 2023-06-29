@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Add New User</h1>
+    <form id="newUserForm" method="POST" class="form">
+        <br />
+        <label for="username">Enter Username:</label>
+        <input type="text" name="username" />
+        <br />
+        <br />
+        <label for="password">Enter Password:</label>
+        <input type="text" name="password" />
+        <br />
+        <br />
+      <button onclick="this.form.submit()" type="submit">Add New User</button>
+      <br />
+      <br />
+      <button>
+        <a href="/menu">Back to Menu</a>
+      </button>
+      <button>
+        <a href="/management">Back to Management Page</a>
+      </button>
+    </form>
+  </body>
+</html>

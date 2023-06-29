@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Update User</h1>
+    <form
+      id="updateUserForm"
+      method="POST"
+      action="/management/update/<%= user.id %>"
+      class="form"
+    >
+      <label for="username">Username:</label>
+      <input name="username" type="text" value="<%= user.username %>" />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input name="password" type="text" value="<%= user.password %>" />
+      <br />
+      <br />
+      <button onclick="this.form.submit()" type="submit">Update User</button>
+    </form>
+    <br />
+    <button>
+      <a href="/menu">Back to Menu</a>
+    </button>
+    <button>
+      <a href="/management">Back to Management Page</a>
+    </button>
+  </body>
+</html>

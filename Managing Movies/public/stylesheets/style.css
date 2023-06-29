@@ -1,0 +1,149 @@
+body {
+  padding: 50px;
+  background-color: rosybrown;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 15px;
+}
+
+a,
+button {
+  color: #050606;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.movieLink {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+.createNewMovieButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.searchPageButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.userManagementButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.h1-managementPage {
+    margin-left: 37.5%;
+}
+
+.h1-addNewSeries{
+    margin-left: 40%;
+}
+
+.h1-searchPage{
+    margin-left: 43%;
+}
+
+.h1-login {
+  margin: auto;
+}
+
+.h1-menu {
+  margin: auto;
+}
+
+.loginForm {
+  padding: 5px;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  border-radius: 8px;
+  border: solid 1px #777;
+  border-collapse: collapse;
+  background-color: lightblue;
+}
+
+.menuButtons {
+  padding: 5px;
+  width: 400px;
+  height: 25px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: solid 1px #777;
+  border-collapse: collapse;
+  background-color: lightblue;
+}
+
+.loginFormFields {
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+.form {
+  padding: 5px;
+  width: 700px;
+  border-radius: 15px;
+  border: solid 1px #777;
+  border-collapse: collapse;
+  background-color: lightblue;
+  margin: auto;
+}
+
+.tb {
+  width: 1300px;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+}
+
+.mn {
+  width: 150px;
+}
+
+.mg {
+  column-count: 6;
+  column-gap: 10px;
+  line-height: 1.6;
+}
+
+.tb th,
+.tb td {
+  padding: 5px;
+  border: solid 1px #777;
+}
+.tb th {
+  background-color: lightblue;
+}

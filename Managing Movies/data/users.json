@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "username": "Admin",
+      "password": "123",
+      "id": 0,
+      "numberOfTransactions": null
+    },
+    {
+      "username": "fff",
+      "password": "333",
+      "id": 1,
+      "numberOfTransactions": 5,
+      "dateCreated": "30/03/2023"
+    },
+    {
+      "username": "vcnvnvn",
+      "password": ",mdm,dfmd",
+      "id": 2,
+      "numberOfTransactions": 10,
+      "dateCreated": "30/03/2023"
+    }
+  ]
+}

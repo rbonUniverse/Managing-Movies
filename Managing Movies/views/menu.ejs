@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="h1-menu">
+        <h1>Menu</h1>
+      </div>
+      <div class="menuButtons">
+        <div class="searchLinkButton">
+          <button>
+            <a href="/search">Search for movies</a>
+          </button>
+        </div>
+        <div class="createNewMovieLinkButton">
+          <button>
+            <a href="/create">Create new movie</a>
+          </button>
+        </div>
+        <% if (role != "Admin") { } else { %>
+        <div class="editUsersButtons">
+          <button>
+            <a href="/management">Edit Users</a>
+          </button>
+        </div>
+        <% } %>
+        <div class="logoutButton">
+          <button>
+            <a href="/login">Logout</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

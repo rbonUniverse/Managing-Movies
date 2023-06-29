@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Movie Details Page</h1>
+    <table class="tb">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Language</th>
+        <th>Genres</th>
+        <th>Photo</th>
+      </tr>
+      <tr>
+        <td><%= movie.id %></td>
+        <td><%= movie.name %></td>
+        <td><%= movie.language %></td>
+        <td><%= movie.genres.map(g => g.toString()).join(", ") %></td>
+        <td>
+          <img src="<%= movie.image?.medium %>" width="200" height="300" />
+        </td>
+      </tr>
+    </table>
+    <br />
+    <button>
+      <a href="/search">Back to Search</a>
+    </button>
+    <button>
+      <a href="/menu">Back to Menu</a>
+    </button>
+  </body>
+</html>

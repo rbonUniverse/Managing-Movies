@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1 class="h1-managementPage">Welcome to Management Page</h1>
+    <table class="tb" style="height: 200px">
+      <tr>
+        <th>Username</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+      <% users.forEach(function (user) { %>
+      <tr>
+        <td><%= user.username %></td>
+        <td>
+          <button>
+            <a href="/management/<%= user.id %>"> Update </a>
+          </button>
+        </td>
+        <td>
+          <form
+            id="deleteUserForm"
+            method="POST"
+            action="/management/<%= user.id %>"
+          >
+            <button onclick="this.form.submit()" type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+      <% }) %>
+    </table>
+    <br />
+    <div class="userManagementButtons">
+      <div class="userManagementBackToMenuButton">
+        <button>
+          <a href="/new"> Add New </a>
+        </button>
+      </div>
+      <div class="userManagementAddNewButton">
+        <button>
+          <a href="/menu"> Back to Menu </a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

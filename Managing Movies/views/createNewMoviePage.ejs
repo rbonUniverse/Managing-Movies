@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1 class="h1-addNewSeries">Add New TV Series</h1>
+    <form id="newMovieForm" method="POST" action="/create" class="form">
+      <label for="name">Enter TV Series Name:</label>
+      <input type="text" name="name" />
+      <br />
+      <br />
+      <div class="some-page-wrapper">
+        <div>Choose Genres:</div>
+        <div class="row">
+          <br />
+          <div class="column">
+            <div class="action">
+              <label for="genres"> Action </label>
+              <input type="checkbox" name="genres" value="Action" />
+            </div>
+            <div class="adventure">
+              <label for="genres"> Adventure </label>
+              <input type="checkbox" name="genres" value="Adventure" />
+            </div>
+            <div class="anime">
+              <label for="genres"> Anime </label>
+              <input type="checkbox" name="genres" value="Anime" />
+            </div>
+            <div class="crime">
+              <label for="genres"> Crime </label>
+              <input type="checkbox" name="genres" value="Crime" />
+            </div>
+            <div class="comedy">
+              <label for="genres"> Comedy </label>
+              <input type="checkbox" name="genres" value="Comedy" />
+            </div>
+            <div class="drama">
+              <label for="genres"> Drama </label>
+              <input type="checkbox" name="genres" value="Drama" />
+            </div>
+            <div class="espionage">
+              <label for="genres"> Espionage </label>
+              <input type="checkbox" name="genres" value="Espionage" />
+            </div>
+            <div class="family">
+              <label for="genres"> Family </label>
+              <input type="checkbox" name="genres" value="Family" />
+            </div>
+            <div class="fantasy">
+              <label for="genres"> Fantasy </label>
+              <input type="checkbox" name="genres" value="Fantasy" />
+            </div>
+            <div class="horror">
+              <label for="genres"> Horror </label>
+              <input type="checkbox" name="genres" value="Horror" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="history">
+              <label for="genres"> History </label>
+              <input type="checkbox" name="genres" value="History" />
+            </div>
+            <div class="legal">
+              <label for="genres"> Legal </label>
+              <input type="checkbox" name="genres" value="Legal" />
+            </div>
+            <div class="medical">
+              <label for="genres"> Medical </label>
+              <input type="checkbox" name="genres" value="Medical" />
+            </div>
+            <div class="music">
+              <label for="genres"> Music </label>
+              <input type="checkbox" name="genres" value="Music" />
+            </div>
+            <div class="mystery">
+              <label for="genres"> Mystery </label>
+              <input type="checkbox" name="genres" value="Mystery" />
+            </div>
+            <div class="romance">
+              <label for="genres"> Romance </label>
+              <input type="checkbox" name="genres" value="Romance" />
+            </div>
+            <div class="science-fiction">
+              <label for="genres"> Science-Fiction</label>
+              <input type="checkbox" name="genres" value="Science-Fiction" />
+            </div>
+            <div class="supernatural">
+              <label for="genres"> Supernatural</label>
+              <input type="checkbox" name="genres" value="Supernatural" />
+            </div>
+            <div class="thriller">
+              <label for="genres"> Thriller </label>
+              <input type="checkbox" name="genres" value="Thriller" />
+            </div>
+            <div class="western">
+              <label for="genres"> Western </label>
+              <input type="checkbox" name="genres" value="Western" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <label for="language">Choose a Language:</label>
+      <br />
+      <select name="language" id="language">
+        <option selected="true" disabled="disabled">Choose Language</option>
+        <option value="English">English</option>
+        <option value="Hebrew">Hebrew</option>
+        <option value="French">French</option>
+        <option value="Spanish">Spanish</option>
+      </select>
+      <br />
+      <br />
+      <div class="createNewMovieButtons">
+      <div class="addButtonInCreateNewMovieButtons">
+      <button onclick="this.form.submit()" type="submit">Add</button>
+      </div>
+    </form>
+    <button class="BackToMenuInCreateMoviePage">
+      <a href="/menu">Back to Menu</a>
+    </button>
+</div>
+</div>
+  </body>
+</html>

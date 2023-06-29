@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Results page</h1>
+    <table class="tb">
+      <tr>
+        <th>Movie Link</th>
+        <th>List Of Movies of the Same Genre</th>
+      </tr>
+      <% leftColumnMovies.forEach((movie) => { %>
+      <tr>
+        <td class="mn">
+          <a href="/search/results/<%= movie.id %>" class="movieLink">
+            <%= movie.name %>
+          </a>
+        </td>
+        <td class="mg">
+          <% const displayedLinks = []; %>
+            <% rightColumnMoviesByGenre.forEach((link) => { %>
+                <% if(link.name == movie.name) { return %>
+                    <% } else { %>
+                        <% if ( link.genres && link.genres.length > 0 && movie.genres.some((n) =>
+                        link.genres.includes(n)) && !displayedLinks.includes(link.id) ) { %>
+                            <a href="/search/results/<%= link.id %>" class="movieLink">
+                                <%= link.name %>
+                            </a>
+                            <br />
+                        <% displayedLinks.push(link.id); %>
+                    <% } %>
+                <% } %>
+            <% }) %>
+        </td>
+      </tr>
+      <% }) %>
+    </table>
+    <br />
+    <button>
+      <a href="/search">Back to Search</a>
+    </button>
+    <button>
+      <a href="/menu">Back to Menu</a>
+    </button>
+  </body>
+</html>
